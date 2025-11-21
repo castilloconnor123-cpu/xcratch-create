@@ -1,0 +1,21 @@
+class MyExtension {
+  getInfo() {
+    return {
+      id: 'myExtension',
+      name: 'Server',
+      blocks: [
+          {
+          opcode: Connect
+          blockType: Scratch.BlockType.Function,
+          text: 'Connect Server'
+        }
+      ]
+    };
+  }
+
+  Connect() {
+    Browser Channel;join channel
+  }
+}
+
+Scratch.extensions.register(new 
